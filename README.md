@@ -30,20 +30,21 @@
 
 1.
 
-MySQL::getAdRecord(int ID) {
-    return array(
-        't_id'       => ID,
-        't_name'     => 'AdName_FromMySQL',
-        't_text'     => 'AdText_FromMySQL',
-        't_keywords' => 'Some Keywords',
-        't_price'    => 10,
-    );
-}
+	MySQL::getAdRecord(int ID) {
+	    return array(
+		't_id'       => ID,
+		't_name'     => 'AdName_FromMySQL',
+		't_text'     => 'AdText_FromMySQL',
+		't_keywords' => 'Some Keywords',
+		't_price'    => 10,
+	    );
+	}
 
 2.
-Daemon::getAdInfoById(int ID) {
-    return "ID\t235678\t12348\tAdName_FromDaemon\tAdText_FromDaemon\t20";
-}
+
+	Daemon::getAdInfoById(int ID) {
+	    return "ID\t235678\t12348\tAdName_FromDaemon\tAdText_FromDaemon\t20";
+	}
 
 Колонки:
     1. id - объявления
